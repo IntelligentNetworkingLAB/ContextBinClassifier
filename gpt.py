@@ -40,3 +40,5 @@ class GPTQuery:
             max_tokens=50
         )
         return response.choices[0].text.strip()
+
+#gpt = GPTQuery("put your API Key")
