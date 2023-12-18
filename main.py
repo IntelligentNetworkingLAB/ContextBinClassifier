@@ -73,9 +73,6 @@ class BinaryClassifier(nn.Module):
 
 model = BinaryClassifier().to(device)
 
-
-model = BinaryClassifier().to(device)
-
 # Define the loss function and optimizer
 criterion = nn.BCELoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=0.001, weight_decay=1e-5)
