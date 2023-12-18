@@ -10,7 +10,7 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 
 # Read the H5 file
-with h5py.File('embeddings_big_more.h5', 'r') as file:
+with h5py.File('put your file', 'r') as file:
     context_embeddings = file['context_embeddings'][:]
     ans_embeddings = file['ans_embeddings'][:]
     labels = file['labels'][:]
