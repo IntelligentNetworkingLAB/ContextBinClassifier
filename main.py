@@ -51,19 +51,12 @@ class BinaryClassifier(nn.Module):
     def __init__(self, dropout_prob=0.5):
         super(BinaryClassifier, self).__init__()
         self.fc1 = nn.Linear(context_embeddings.shape[1] + ans_embeddings.shape[1], 1024)
-        self.dropout1 = nn.Dropout(dropout_prob)
         self.fc2 = nn.Linear(1024, 512)
-        self.dropout2 = nn.Dropout(dropout_prob)
         self.fc3 = nn.Linear(512, 256)
-        self.dropout3 = nn.Dropout(dropout_prob)
         self.fc4 = nn.Linear(256, 128)
-        self.dropout4 = nn.Dropout(dropout_prob)
         self.fc5 = nn.Linear(128, 64)
-        self.dropout5 = nn.Dropout(dropout_prob)
         self.fc6 = nn.Linear(64, 32)
-        self.dropout6 = nn.Dropout(dropout_prob)
         self.fc7 = nn.Linear(32, 16)
-        self.dropout7 = nn.Dropout(dropout_prob)
         self.fc8 = nn.Linear(16, 1)
 
     def forward(self, context, answer):
