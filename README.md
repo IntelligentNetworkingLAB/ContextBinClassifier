@@ -1,4 +1,4 @@
-# SpaceRIS: LEO Satellite Coverage Maximization in 6G Sub-THz Networks by MAPPO DRL
+# Context Binary Classifier with Sentence Transformer
 
 ## Overview
 First, we use the Sentence transformer to extract the embedding vectors for the user pair and current prompt, respectively, by running them through the transformer before scoring. Let the input sentence is y, then this sentence is defined as:
